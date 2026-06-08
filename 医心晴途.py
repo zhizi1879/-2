@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
 import streamlit as st
 import plotly.graph_objects as go
 import numpy as np
@@ -15,15 +14,15 @@ st.markdown("---")
 # ========== 全局初始化 ==========
 if "check_in_days" not in st.session_state:
     st.session_state.check_in_days = 0
-if "total_sessions" not in st.session_state:如果 "total_sessions"不在 st.session_state中：如果 "total_sessions"不在 st.session_state中：如果 "total_sessions"不在 st.session_state中：如果 不在 st.session_state中：如果不在 st.session_state中：如果 "total_sessions"不在 st.session_state中：如果 不在 st.在 session_state 中：如果不在 st.session_state 中：如果 “total_sessions” 不在 st.session_state 中：如果 不在 st.session_state 中：如果 不在 st.session_state 中：如果 "total_sessions"不在 st.session_state中：如果 不在 st.在 session_state 中：如果不在 st.session_state 中：如果 “total_sessions” 不在 st.session_state 中：如果 不在 st.session_state 中：如果 不在 st.session_state 中：如果 “total_sessions” 不在 st.session_state 中：如果 不在 st. 在 session_state 中：如果 不在 st.session_state 中：如果 “total_sessions” 不在 st.session_state 中：如果 不在 st.session_state 中：如果 不在 st.session_state 中：
+if "total_sessions" not in st.session_state:
     st.session_state.total_sessions = 0
-if "badges" not in st.session_state:如果 "badges" 不 在 st.会话状态:不在 st.会话状态：如果 "badges" 不 在 st.会话状态:如果 "badges" 不 在 st.会话状态：如果 "badges" 不 在 st.会话状态:如果 "badges" 不 在 st.会话状态:如果 "badges" 不 在 st.会话状态：如果 "badges" 不 在 st.会话状态:如果 "badges" 不 在 st.会话状态:如果 "badges" 不 在 st.会话状态:如果 "badges" 不 在 st.会话状态:如果 "badges" 不 在 st.会话状态:如果 "badges" 不 在 st.会话状态：如果 "badges" 不 在 st.会话状态:如果 "badges" 不 在 st.会话状态：如果 "badges" 不 在 st.会话状态：如果 "badges" 不 在 st.会话状态：如果 "badges" 不 在 st.会话状态：如果 "badges" 不 在 st.会话状态：如果 "badges" 不 在 st.会话状态：如果 "badges" 不 在 st.会话状态：如果 "badges" 不 在 st.会话状态：如果 "badges" 不 在 st.会话状态：如果 "badges" 不 在 st.会话状态：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.会话状态中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state......如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在st.session_state中：如果“badges”不在......
+if "badges" not in st.session_state:
     st.session_state.badges = []
-if "mindfulness_done""正念完成""正念完成" not in如果 "mindfulness_done""正念完成" not 在 st.session_state:如果 "mindfulness_done""正念完成" 不在 st.session_state 中：如果 "mindfulness_done" 不在 st.session_state 中：if "mindfulness_done""正念完成" not in如果 "mindfulness_done""正念完成" 不在 st.session_state:如果 "mindfulness_done" 不在 st.session_state 中：如果“mindfulness_done”“正念完成”“正念完成”不在 st.session_state 中：如果“mindfulness_done”“正念完成”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”“正念完成”“正念完成”不在 st.session_state 中：如果“mindfulness_done”“正念完成”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”“正念完成”“正念完成”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”“正念完成”“正念完成”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：如果“mindfulness_done”不在 st.session_state 中：
-    st.session_state.mindfulness_done正念完成 = False假
-if "mood_history" not in st.session_state:如果 "mood_history" 不在 st.session_state 中：
-    st.session_state.mood_history = []如果 "tree_hole_messages"不在 st.session_state中：
-if "tree_hole_messages" not in st.session_state:如果 "tree_hole_messages" 不在 st.session_state 中：如果 "tree_hole_messages" 不在 st.session_state 中：如果 "tree_hole_messages" 不在 st.session_state 中：如果 "tree_hole_messages" 不在 st.session_state 中：如果 "tree_hole_messages" 不在 st.session_state 中：如果 "tree_hole_messages" 不在 st.session_state 中：如果 "tree_hole_messages" 不在 st.session_state 中：如果 "tree_hole_messages" 不在 st.session_state 中：如果 "tree_hole_messages" 不在 st.session_state 中：如果 "tree_hole_messages" 不在 st.session_state 中：如果 "tree_hole_messages" 不在 st.session_state 中：如果 "tree_hole_messages" 不在 st.session_state 中：如果 "tree_hole_messages" 不在 st.session_state 中：如果 "tree_hole_messages" 不在 st.session_state 中：如果 "tree_hole_messages" 不在 st.session_state 中：如果 "tree_hole_messages" 不在 st.session_state 中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：“hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：如果“tree_hole_messages”不在st.session_state中：
+if "mindfulness_done" not in st.session_state:
+    st.session_state.mindfulness_done = False
+if "mood_history" not in st.session_state:
+    st.session_state.mood_history = []
+if "tree_hole_messages" not in st.session_state:
     st.session_state.tree_hole_messages = []
 
 # ========== 音频链接（纯音乐/白噪音）==========
@@ -37,7 +36,7 @@ page = st.radio("", ["📋 情绪识别小助手", "🧘 规培间隙的放松",
 # ========================
 # 页面1：心理测评
 # ========================
-if page == "📋 情绪识别小助手":如果页面 == " 情绪识别小助手":
+if page == "📋 情绪识别小助手":
     phq9_questions = [
         "做事时提不起劲或没有兴趣",
         "感到心情低落、沮丧或绝望",
@@ -83,7 +82,7 @@ if page == "📋 情绪识别小助手":如果页面 == " 情绪识别小助手"
         elif phq9 <= 14:
             phq9_level = "🟠 中度情绪困扰"
             phq9_tip = "情绪压力较大，建议主动找心理老师聊聊。"
-        else:        否则：
+        else:
             phq9_level = "🔴 重度情绪困扰"
             phq9_tip = "你正在经历较大的情绪困难，请尽快联系心理健康中心：28643572"
 
@@ -92,7 +91,7 @@ if page == "📋 情绪识别小助手":如果页面 == " 情绪识别小助手"
         elif gad7 <= 9:
             gad7_level = "🟡 轻度焦虑"
         elif gad7 <= 14:
-            gad7_level = "🟠 中度焦虑"            gad7_level = “中度焦虑”
+            gad7_level = "🟠 中度焦虑"
         else:
             gad7_level = "🔴 重度焦虑"
 
@@ -103,7 +102,7 @@ if page == "📋 情绪识别小助手":如果页面 == " 情绪识别小助手"
         for i, q in enumerate(all_questions):
             col1, col2 = st.columns([3, 1])
             with col1:
-                label = "PHQ-9" if i < 9 else "GAD-7"                label = "PHQ-9" 如果 i < 9 则为 "GAD-7"                label = "PHQ-9" 如果 i < 9 则为 "GAD-7"                label = "PHQ-9" 如果 i < 9 则为 "GAD-7"                label = "PHQ-9" 如果 i < 9 则为 "GAD-7"                label = "PHQ-9" 如果 i < 9 则为 "GAD-7"                label = "PHQ-9" 如果 i < 9 则为 "GAD-7"
+                label = "PHQ-9" if i < 9 else "GAD-7"
                 st.markdown(f"**{label} {i+1 if i < 9 else i-8}.** {q}")
             with col2:
                 st.session_state.answers[i] = st.radio("", options, key=f"q{i}", index=0, label_visibility="collapsed")
@@ -112,7 +111,7 @@ if page == "📋 情绪识别小助手":如果页面 == " 情绪识别小助手"
             st.rerun()
     else:
         total, phq9, gad7 = calc_score(st.session_state.answers)
-        phq9_level, phq9_tip, gad7_level = get_level(phq9, gad7)        phq9_level, phq9_tip, gad7_level = 获取级别(phq9, gad7)
+        phq9_level, phq9_tip, gad7_level = get_level(phq9, gad7)
 
         st.markdown("## 📊 情绪监测结果")
         col1, col2 = st.columns([1, 1])
@@ -120,7 +119,7 @@ if page == "📋 情绪识别小助手":如果页面 == " 情绪识别小助手"
             st.metric("抑郁评分 (PHQ-9)", f"{phq9} / 27", phq9_level.split(" ")[0])
             st.metric("焦虑评分 (GAD-7)", f"{gad7} / 21", gad7_level.split(" ")[0])
             st.metric("综合评分", f"{total} / 48", "")
-        with col2:        与col2一起：
+        with col2:
             st.info(phq9_tip)
 
         # 仪表盘
@@ -186,9 +185,9 @@ elif page == "🧘 规培间隙的放松":
                 ("屏住... 1... 2... 3... 4... 5... 6... 7...", 7),
                 ("💨 呼气... 1... 2... 3... 4... 5... 6... 7... 8...", 8),
             ]
-            for text, sec in steps:            对于文本，每一步：
+            for text, sec in steps:
                 placeholder.markdown(f"## {text}")
-                time.sleep(sec)                time.sleep(秒)
+                time.sleep(sec)
             placeholder.markdown("## ✅ 练习完成！感觉好点了吗？")
 
         elif "身体扫描" in exercise:
@@ -207,7 +206,7 @@ elif page == "🧘 规培间隙的放松":
             ]
             for part, text, sec in body_parts:
                 placeholder.markdown(f"### 感受你的 **{part}**... {text}")
-                time.sleep(sec)                time.sleep(秒)
+                time.sleep(sec)
             placeholder.markdown("## ✅ 扫描完成！")
 
         elif "正念倾听" in exercise:
@@ -219,9 +218,9 @@ elif page == "🧘 规培间隙的放松":
                 ("感受声音的远近、大小...", 3),
                 ("回到自己的呼吸...", 3),
             ]
-            for text, sec in steps:            对于文本，每一步：
+            for text, sec in steps:
                 placeholder.markdown(f"# {text}")
-                time.sleep(sec)                time.sleep(秒)
+                time.sleep(sec)
             placeholder.markdown("## ✅ 倾听完成！")
 
         st.rerun()
@@ -238,7 +237,7 @@ elif page == "📝 工作情绪存档":
     col1, col2 = st.columns([2, 1])
     with col1:
         mood_text = st.radio("今天心情如何？", mood_options, horizontal=True)
-    with col2:    带有 col2：
+    with col2:
         if st.button("💾 记录", type="primary", key="btn_mood"):
             mood_score = mood_scores[mood_options.index(mood_text)]
             st.session_state.mood_history.append({
@@ -261,8 +260,8 @@ elif page == "📝 工作情绪存档":
         ))
         fig.update_layout(
             title="近期情绪变化",
-            xaxis_title="时间",            x轴标题="时间",
-            yaxis_title="心情分数",            y轴标题="心情分数",
+            xaxis_title="时间",
+            yaxis_title="心情分数",
             yaxis=dict(range=[0, 6], tickvals=[1, 2, 3, 4, 5],
                        ticktext=["😢 很差", "😔 不好", "😐 一般", "🙂 还行", "😊 很好"])
         )
@@ -285,7 +284,7 @@ elif page == "🌳 医护吐槽安全屋":
     col1, col2 = st.columns([3, 1])
     with col1:
         new_msg = st.text_area("写下你想说的话...", height=150, placeholder="在这里，你可以说任何话...")
-    with col2:    带有 col2：
+    with col2:
         if st.button("🕳️ 投入树洞", type="primary", key="btn_treehole"):
             if new_msg.strip():
                 st.session_state.tree_hole_messages.append({
@@ -366,7 +365,7 @@ elif page == "🏆 抗压升级日志":
     col1, col2, col3 = st.columns(3)
     with col1:
         st.metric("累计练习", f"{sessions} 次", "")
-    with col2:    带有 col2：
+    with col2:
         st.metric("当前等级", rank, "")
     with col3:
         st.metric("连续打卡", f"{st.session_state.check_in_days} 天", "")
@@ -383,11 +382,11 @@ elif page == "🏆 抗压升级日志":
     if st.button("✅ 今日打卡", type="primary", key="btn_checkin"):
         st.session_state.check_in_days += 1
         st.session_state.total_sessions += 1
-        if st.session_state.check_in_days >= 7 and "🔥 连续7天" not in st.session_state.badges:        如果 st.session_state.check_in_days 大于等于 7 并且 " 连续7天" 不在 st.session_state.badges 中：
+        if st.session_state.check_in_days >= 7 and "🔥 连续7天" not in st.session_state.badges:
             st.session_state.badges.append("🔥 连续7天")
-        if st.session_state.total_sessions >= 10 and "⭐ 10次练习" not in st.session_state.badges:        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：且 “⭐ 10次练习” 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 “⭐ 10次练习” 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 “⭐ 10次练习” 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 “⭐ 10次练习” 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 “⭐ 10次练习” 不在 st.session_state.badges 中：
+        if st.session_state.total_sessions >= 10 and "⭐ 10次练习" not in st.session_state.badges:
             st.session_state.badges.append("⭐ 10次练习")
-        if st.session_state.total_sessions >= 30 and "💎 正念大师" not in st.session_state.badges:        如果 st.session_state.total_sessions 大于等于 30 并且 " 正念大师" 不在 st.session_state.badges 中：
+        if st.session_state.total_sessions >= 30 and "💎 正念大师" not in st.session_state.badges:
             st.session_state.badges.append("💎 正念大师")
         st.rerun()
 
