@@ -1,28 +1,28 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
-import streamlit as st
-import plotly.graph_objects as go
-import time
-from datetime import datetime
-import os
-import io  # 新增：用于二进制读取音频，解决文件打开报错
+# -*- coding: utf-8 -*-# -*- 编码: utf-8 -*-
+import streamlit as st导入 streamlit 作为 st将 streamlit 导入为 st
+import plotly.graph_objects as go导入 plotly.graph_objects 作为 go
+import导入 time导入 time 模块
+from datetime import导入 日期时间 import datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从datetime导入 日期时间 import datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 日期时间 importimport datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从datetime导入 日期时间  datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 date导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime......导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从 datetime 导入 datetime 从......time从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime......从 datetime 导入 日期时间 import datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从datetime导入 日期时间  datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导入 datetime从 datetime 导......
+import os导入 os
+import io  # 新增：用于二进制读取音频，解决文件打开报错导入 io  # 新增：用于二进制读取音频，解决文件打开报错
 
-st.set_page_config(page_title="规培生正念解压站", layout="centered", page_icon="🧘‍♀️")
+st.set_page_config(page_title="规培生正念解压站", layout="centered", page_icon="🧘‍♀️")st.设置页面配置(街.设置页面配置(页面标题="规培生正念解压站", 布局="居中", 页面图标="‍♀️")
 
 
 # ========== 全局状态初始化（加固版，兼容旧版Streamlit） ==========
 def init_session_state():
-    if "check_in_days" not in st.session_state:
+    if "check_in_days" not in st.session_state:如果 "check_in_days"不在 st.session_state中：    如果 "check_in_days"不在 st.session_state中：    如果 "check_in_days"不在 st.session_state中：    如果 “check_in_days”不在 st.session_state中：
         st.session_state["check_in_days"] = 0
-    if "total_sessions" not in st.session_state:
+    if "total_sessions" not in st.session_state:如果 "total_sessions"不在 st.session_state中：
         st.session_state["total_sessions"] = 0
-    if "badges" not in st.session_state:
+    if "badges" not in st.session_state:如果 "badges"不在 st.session_state中：
         st.session_state["badges"] = []
-    if "mindfulness_done" not in st.session_state:
+    if "mindfulness_done" not in st.session_state:如果 "mindfulness_done"不在 st.session_state中：
         st.session_state["mindfulness_done"] = False
-    if "mood_history" not in st.session_state:
+    if "mood_history" not in st.session_state:    如果 "mood_history" 不在 st.session_state 中：
         st.session_state["mood_history"] = []
-    if "tree_hole_messages" not in st.session_state:
+    if "tree_hole_messages" not in st.session_state:    如果 "tree_hole_messages" 不在 st.session_state 中：
         st.session_state["tree_hole_messages"] = []
     if "current_page" not in st.session_state:
         st.session_state["current_page"] = "首页"
@@ -60,7 +60,7 @@ def show_home():
     """, unsafe_allow_html=True)
 
     cols = st.columns(3)
-    modules = [
+    modules = [    模块 = [
         ("📋", "情绪识别小助手", "PHQ-9 + GAD-7 专业测评\n2分钟了解你的情绪状态", "📋 情绪识别小助手"),
         ("🧘", "规培间隙的放松", "呼吸法 · 身体扫描 · 正念倾听\n给自己3分钟", "🧘 规培间隙的放松"),
         ("📝", "工作情绪存档", "记录每日心情\n用数据看见情绪变化", "📝 工作情绪存档"),
@@ -70,7 +70,7 @@ def show_home():
     ]
 
     for i, (icon, title, desc, page_name) in enumerate(modules):
-        with cols[i % 3]:
+        with cols[i % 3]:        在 cols[i % 3] 中：
             if st.button(f"{icon}  {title}", key=f"home_btn_{i}", use_container_width=True):
                 st.session_state.current_page = page_name
                 st.experimental_rerun()
@@ -84,7 +84,7 @@ def show_home():
 
 
 # ========== 情绪识别 ==========
-def show_page_1():
+def show_page_1():def 显示页面1():def 显示页面1():def 显示页面1():def 显示页面1():def 显示页面1():def 显示页面1():def 显示页面1():
     st.title("📋 情绪识别小助手")
     st.markdown("**遵义医科大学 · 规培生心理支持系统**")
     st.markdown("---")
@@ -157,7 +157,7 @@ def show_page_1():
                                                       {'range': [10, 14], 'color': "#fed7aa"},
                                                       {'range': [15, 27], 'color': "#fecaca"}],
                                             'threshold': {'line': {'color': "red", 'width': 4}, 'thickness': 0.8,
-                                                          'value': 10}}))
+                                                          'value': 10}}))                                                          '值': 10}}))
         fig.add_trace(go.Indicator(mode="gauge+number", value=gad7, domain={'x': [0.5, 1], 'y': [0, 1]},
                                    title={'text': f"GAD-7 焦虑 {gad7}/21"},
                                    gauge={'axis': {'range': [0, 21]}, 'bar': {'color': "#8b5cf6"},
@@ -166,7 +166,7 @@ def show_page_1():
                                                     {'range': [10, 14], 'color': "#fed7aa"},
                                                     {'range': [15, 21], 'color': "#fecaca"}],
                                           'threshold': {'line': {'color': "red", 'width': 4}, 'thickness': 0.8,
-                                                        'value': 10}}))
+                                                        'value': 10}}))                                                        '值': 10}}))                                                        '值': 10}}))                                                        '值': 10}}))                                                        '值': 10}}))                                                        '值': 10}}))                                                        '值': 10}}))                                                        '值': 10}}))
         fig.update_layout(height=300, margin=dict(l=20, r=20, t=40, b=20))
         st.plotly_chart(fig, use_container_width=True)
 
@@ -182,7 +182,7 @@ def show_page_2():
     st.markdown("**遵义医科大学 · 规培生心理支持系统**")
     st.markdown("---")
 
-    exercise = st.selectbox(
+    exercise = st.selectbox(    锻炼 = st.selectbox(    锻炼 = st.selectbox(    锻炼 = st.selectbox(
         "",
         [
             "🫁 4-7-8 呼吸法（2分钟，值夜班前推荐）",
@@ -191,7 +191,7 @@ def show_page_2():
             "🌙 深度舒缓放松（4分钟，睡前/高压后推荐）"
         ]
     )
-    if "4-7-8" in exercise:
+    if "4-7-8" in exercise:    如果“4-7-8”在锻炼中：    如果“4-7-8”在锻炼中：    如果“4-7-8”在锻炼中：    如果“4-7-8”在锻炼中：    如果“4-7-8”在锻炼中：    如果“4-7-8”在锻炼中：    如果“4-7-8”在锻炼中：    如果“4-7-8”在锻炼中：    如果“4-7-8”在锻炼中：    如果“4-7-8”在锻炼中：    如果“4-7-8”在锻炼中：
         audio_path = BREATH_AUDIO
     elif "身体扫描" in exercise:
         audio_path = BODY_AUDIO
@@ -212,8 +212,8 @@ def show_page_2():
         st.markdown("---")
         placeholder = st.empty()
 
-        if "4-7-8" in exercise:
-            steps = [
+        if "4-7-8" in exercise:        如果“4-7-8”在练习中：        如果“4-7-8”在练习中：
+            steps = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [
                 ("准备好了吗？深呼吸一次...", 3),
                 ("🫁 吸气... 1... 2... 3... 4...", 4),
                 ("屏住呼吸... 1... 2... 3... 4... 5... 6... 7...", 7),
@@ -226,7 +226,7 @@ def show_page_2():
                 ("💨 呼气... 1... 2... 3... 4... 5... 6... 7... 8...", 8)
             ]
             for text, sec in steps:
-                placeholder.markdown(f"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>",
+                placeholder.markdown(f"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",
                                      unsafe_allow_html=True)
                 time.sleep(sec)
             placeholder.markdown(
@@ -247,17 +247,21 @@ def show_page_2():
                 ("双腿", "双腿变重... 完全支撑...", 4),
                 ("脚底", "脚底踏实... 感受地面...", 4)
             ]
-            for part, text, sec in body_parts:
+            for part, text, sec in body_parts:            对于 body_parts 中的每个 part、text 和 sec：
                 placeholder.markdown(
-                    f"<div style='text-align:center;font-size:1.5em;padding:15px;'>感受你的 <b>{part}</b>... {text}</div>",
+                    f"<div style='text-align:center;font-size:1.5em;padding:15px;'>感受你的 <b>{part}</b>... {text}</div>",                    f"                    f"
+感受你的 {part}... {text}
+",                    f"
+感受你的 {part}... {text}
+",
                     unsafe_allow_html=True)
                 time.sleep(sec)
             placeholder.markdown(
                 "<div style='text-align:center;font-size:1.8em;padding:30px;color:#2e7d32;'>✅ 扫描完成！</div>",
                 unsafe_allow_html=True)
 
-        elif "正念倾听" in exercise:
-            steps = [
+        elif "正念倾听" in exercise:        elif “正念倾听”在练习中：        elif “正念倾听”在练习中：
+            steps = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [            步骤 = [
                 ("找一个安静的地方...", 2),
                 ("闭上眼睛...", 2),
                 ("注意你听到的第一个声音...", 3),
@@ -266,15 +270,15 @@ def show_page_2():
                 ("回到自己的呼吸...", 3)
             ]
             for text, sec in steps:
-                placeholder.markdown(f"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>",
+                placeholder.markdown(f"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</......                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6......6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</......                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6......6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</......                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6......6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",
                                      unsafe_allow_html=True)
                 time.sleep(sec)
             placeholder.markdown(
-                "<div style='text-align:center;font-size:1.8em;padding:30px;color:#2e7d32;'>✅ 倾听完成！</div>",
+                "<div style='text-align:center;font-size:1.8em;padding:30px;color:#2e7d32;'>✅ 倾听完成！</div>",                “<div style='text-align:center;font-size:1.8em;padding:30px;color:#2e7d32;'>✅ 倾听完成！</div>",                “<div style='text-align:center;font-size:1.8em;padding:30px;color:#2e7d32;'>✅ 倾听完成！</div>",                “<div style='text-align:center;font-size:1.8em;padding:30px;color:#2e7d32;'>✅ 倾听完成！</div>",                “<div style='text-align:center;font-size:1.8em;padding:30px;color:#2e7d32;'>✅ 倾听完成！</div>",                “<div style='text-align:center;font-size:1.8em;padding:30px;color:#2e7d32;'>✅ 倾听完成！</div>",                “<div style='text-align:center;font-size:1.8em;padding:30px;color:#2e7d32;'>✅ 倾听完成！</div>",                “<div style='text-align:center;font-size:1.8em;padding:30px;color:#2e7d32;'>✅ 倾听完成！</div>",
                 unsafe_allow_html=True)
 
         else:
-            relax_steps = [
+            relax_steps = [            放松步数 = [
                 ("找一个舒服的姿势，慢慢坐好或躺好...", 4),
                 ("轻轻闭上双眼，把注意力带回当下...", 4),
                 ("随着每一次吸气，接纳全身的疲惫...", 5),
@@ -286,8 +290,8 @@ def show_page_2():
                 ("安住在这份平静里，好好拥抱自己...", 6),
                 ("慢慢动一动手指、脚趾，缓缓睁开眼睛...", 4)
             ]
-            for text, sec in relax_steps:
-                placeholder.markdown(f"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>",
+            for text, sec in relax_steps:            对于每个文本和片段，执行松弛步骤：
+                placeholder.markdown(f"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</......                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markd居中；字体大小：1.6em；内边距：20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6......6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",                占位符.markdown(f\"<div style='text-align:center;font-size:1.6em;padding:20px;'>{text}</div>\",
                                      unsafe_allow_html=True)
                 time.sleep(sec)
             placeholder.markdown(
@@ -322,7 +326,7 @@ def show_page_3():
         dates = [h["date"] for h in st.session_state.mood_history]
         scores = [h["score"] for h in st.session_state.mood_history]
         fig = go.Figure(data=go.Scatter(x=dates, y=scores, mode='lines+markers',
-                                        line=dict(color='#6366f1', width=3), marker=dict(size=10)))
+                                        line=dict(color='#6366f1', width=3), marker=dict(size=10)))                                        线条=dict(颜色='#6366f1', 宽度=3), 标记=dict(大小=10)))                                        线条=dict(颜色='#6366f1', 宽度=3), 标记=dict(大小=10)))                                        线条=dict(颜色='#6366f1', 宽度=3), 标记=dict(大小=10)))                                        线条=dict(颜色='#6366f1', 宽度=3), 标记=dict(大小=10)))                                        线条=dict(颜色='#6366f1', 宽度=3), 标记=dict(大小=10)))                                        线条=dict(颜色='#6366f1', 宽度=3), 标记=dict(大小=10)))                                        线条=dict(颜色='#6366f1', 宽度=3), 标记=dict(大小=10)))
         fig.update_layout(title="近期情绪变化", xaxis_title="时间", yaxis_title="心情分数",
                           yaxis=dict(range=[0, 6], tickvals=[1, 2, 3, 4, 5],
                                      ticktext=["😢 很差", "😔 不好", "😐 一般", "🙂 还行", "😊 很好"]))
@@ -403,7 +407,7 @@ def show_page_6():
         st.metric("累计练习", f"{sessions} 次", "")
     with col2:
         st.metric("当前等级", rank, "")
-    with col3:
+    with col3:    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：    与 col3：    在 col3 中：
         st.metric("连续打卡", f"{st.session_state.check_in_days} 天", "")
 
     st.markdown("---")
@@ -417,11 +421,11 @@ def show_page_6():
     if st.button("✅ 今日打卡", type="primary", key="btn_checkin"):
         st.session_state.check_in_days += 1
         st.session_state.total_sessions += 1
-        if st.session_state.check_in_days >= 7 and "🔥 连续7天" not in st.session_state.badges:
+        if st.session_state.check_in_days >= 7 and "🔥 连续7天" not in st.session_state.badges:        如果 st.session_state.check_in_days 大于等于 7 并且 " 连续7天" 不在 st.session_state.badges 中：
             st.session_state.badges.append("🔥 连续7天")
-        if st.session_state.total_sessions >= 10 and "⭐ 10次练习" not in st.session_state.badges:
+        if st.session_state.total_sessions >= 10 and "⭐ 10次练习" not in st.session_state.badges:        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：且 “⭐ 10次练习” 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 “⭐ 10次练习” 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 “⭐ 10次练习” 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 “⭐ 10次练习” 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 “⭐ 10次练习” 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 "⭐ 10次练习" 不在 st.session_state.badges 中：且 “⭐ 10次练习” 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 “⭐ 10次练习” 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 “⭐ 10次练习” 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 “⭐ 10次练习” 不在 st.session_state.badges 中：        如果 st.session_state.total_sessions 大于等于 10 且 “⭐ 10次练习” 不在 st.session_state.badges 中：
             st.session_state.badges.append("⭐ 10次练习")
-        if st.session_state.total_sessions >= 30 and "💎 正念大师" not in st.session_state.badges:
+        if st.session_state.total_sessions >= 30 and "💎 正念大师" not in st.session_state.badges:        如果 st.session_state.total_sessions 大于等于 30 且 " 正念大师" 不在 st.session_state.badges 中：
             st.session_state.badges.append("💎 正念大师")
         st.experimental_rerun()
 
@@ -430,21 +434,22 @@ def show_page_6():
 
 
 # ========== 路由跳转 ==========
-page_map = {页面映射 = {
-    "首页": show_home,: 显示首页,
+# ========== 路由跳转（修复版，全部使用英文半角冒号） ==========
+page_map = {
+    "首页": show_home,
     "📋 情绪识别小助手": show_page_1,
-    "🧘 规培间隙的放松": show_page_2,"规培间隙的放松": show_page_2,：show_page_2,：show_page_2，：show_page_2，
-    "📝 工作情绪存档": show_page_3,
+    "🧘 规培间隙的放松": show_page_2,
+    "📝 工作情绪存档": show_page_3,    " 工作情绪存档": 显示第3页,
     "🌳 医护吐槽安全屋": show_page_4,
     "📚 情绪急救科普册": show_page_5,
     "🏆 抗压升级日志": show_page_6,
 }
 
 if st.session_state.current_page == "首页":
-    show_home()
+    show_home()    显示主页()
 else:
-    page_map[st.session_state.current_page]()    页面映射[状态.会话状态.当前页面]()
+    page_map[st.session_state.current_page]()
     st.markdown("---")
-    if st.button("🏠 返回首页", key="btn_back_home_global", use_container_width=False):    如果 st.按钮(" 返回首页"    如果 st.按钮(" 返回首页", key="btn_back_home_global", use_container_width=False):    如果 st.按钮(" 返回首页", key="btn_back_home_global", use_container_width=False):    如果 st.按钮(" 返回首页", key="btn_back_home_global", use_container_width=False):    如果 st.按钮(" 返回首页"    如果 st.按钮(" 返回首页", key="btn_back_home_global", use_container_width=False):    如果 st.按钮(" 返回首页", key="btn_back_home_global", use_container_width=False):
+    if st.button("🏠 返回首页", key="btn_back_home_global", use_container_width=False):
         st.session_state.current_page = "首页"
         st.experimental_rerun()
